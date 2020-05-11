@@ -1,11 +1,11 @@
 # 2DHeatTransfer
 
-A python library that simulates two dimensional transient heat conduction in a square plate using ADI finite difference method
+A python library that simulates two-dimensional transient heat conduction in a square plate using ADI finite difference method
 
 
 ## Getting started 
 
-The repository can be clone and the library `TwoDHeat.py` can be simply imported for use
+The repository can be cloned and the library `TwoDHeat.py` can be simply imported for use
 
 ### Prerequisites 
 
@@ -20,28 +20,28 @@ A square plate of length 2L and thermal diffusivity α with initial temperature 
 
 The problem is a diffusion type problem and the governing equation is given by 
 
-![Equation 1](/README/1.png)
+![Equation 1](/Images/1.png)
 
-with IC at t = 0 T = Tin ∀ x,y
-and BCs T = T0 at x = L and y = L for t > 0
+with IC, T = Tin at t = 0, ∀ x,y
+and BCs, T = T0 at x = L and y = L for ∀ t > 0
 
-After appropriate non dimensionalisation can be given as
+After appropriate non-dimensionalisation the equation can be given as
 
-![Equation 2](/README/2.png)
+![Equation 2](/Images/2.png)
 
 Alternating Directional Implicit finite difference method is used to calculate the temperature 
 
 Implicit FDM formulation in x direction for the first half time step results in
 
-![Equation 3&4](/README/34.png)
+![Equation 3&4](/Images/34.png)
 
 where θ*  denotes θ at time step t= p+½ 
 
-These equations don’t take care of boundary cases and image point technique is used for such cases
+These equations don’t incorporates boundary cases and image point technique is used for such cases
 
 Further FDM over y direction results in
 
-![Equation 5&6](/README/56.png)
+![Equation 5&6](/Images/56.png)
 
 ## Usage
 
@@ -64,7 +64,7 @@ p1.solve()
 ```
 This is one snapshot of the animation 
 
-![Snapshot taken during Animation](/README/Example.png)
+![Snapshot taken during Animation](/Images/Example.png)
 
 
 
