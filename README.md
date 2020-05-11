@@ -43,6 +43,10 @@ Further FDM over y direction results in
 
 ![Equation 5&6](/Images/56.png)
 
+here
+
+![Equation 7,8&9](/Images/789.png)
+
 ## Usage
 
 The object to the class has to be passed with a dictionary of parameters for the simulation
