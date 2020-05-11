@@ -64,7 +64,7 @@ p1.solve()
 ```
 This is one snapshot of the animation 
 
-![Equation 5&6](/README/Example.png)
+![Snapshot taken during Animation](/README/Example.png)
 
 
 
