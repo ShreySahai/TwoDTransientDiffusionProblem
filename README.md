@@ -1,24 +1,24 @@
 # 2DHeatTransfer
 
-A python library that simulates two-dimensional transient heat conduction in a square plate using ADI finite difference method
+A python library that simulates two dimensional transient heat conduction in a square plate using ADI finite difference method
 
 
-##Getting started 
+## Getting started 
 
-The repository can be clone and the library `TwoDHeatTranfer.py` can be simply imported for use
+The repository can be clone and the library `TwoDHeat.py` can be simply imported for use
 
-###Prerequisites 
+### Prerequisites 
 
 The library uses the following two python libraries
 
 * numpy
 * matplotlib
 
-###Problem statement
+### Problem statement
 
 A square plate of length 2L and thermal diffusivity α with initial temperature Tin is suddenly subjected to temperature T0
 
-The governing equation is given by
+The problem is a diffusion type problem and the governing equation is given by 
 
 ![Equation 1](/README/1.png)
 
@@ -43,40 +43,29 @@ Further FDM over y direction results in
 
 ![Equation 5&6](/README/56.png)
 
-##Usage
+## Usage
 
 The object to the class has to be passed with a dictionary of parameters for the simulation
+Objects's `solve()` function is to be called for the animation to start 
 
-```
+```python
+from 	TwoDHeatTransfer	import	TwoDHeatTransfer as problem
 parameters ={
 			"Length"		: 1.,			#Length of the plate
 			"T0"			: 300.,			#Surrounding Temperature
 			"Tin"			: 100.,			#Initial Temperature
 			"alpha"			: 0.5e-6,		#Thermal diffusivity
-			"Nelements"		: 20,			#Number of elements on the plate
-			"timestep"		: 0.01,			#Value of dt(dimensionless time step) 
-			"Niteration"	: 150,			#Number of iterations over 
-} 
-```
-
-##Example
-
-Objects's solve function is to be called for the animation to start 
-
-```
-from 	temp					import	TwoDHeatTransfer as problem
-parameters ={
-			"Length"		: 1.,			#Length of the plate
-			"T0"			: 300.,			#Surrounding Temperature
-			"Tin"			: 100.,			#Initial Temperature
-			"alpha"			: 0.5e-6,		#Thermal diffusivity
-			"Nelements"		: 20,			#Number of elements on the plate
+			"Nelements"		: 20,			#Number of elements along the half plate
 			"timestep"		: 0.01,			#Value of dt(dimensionless time step) 
 			"Niteration"	: 150,			#Number of iterations over 
 } 
 p1 = problem(parameters)					#initialise object with these parameters
 p1.solve()				
 ```
+This is one snapshot of the animation 
+
+![Equation 5&6](/README/Example.png)
+
 
 
 
