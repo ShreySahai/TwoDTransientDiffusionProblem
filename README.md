@@ -70,7 +70,7 @@ This is one snapshot of the animation
 
 ![Snapshot taken during Animation](/Images/Example.png)
 
-[Link to the animation](https://lnkd.in/dFfXRgD)
+[Link to the animation](https://www.linkedin.com/posts/shrey-sahai-gupta_numericalabrmethod-diffusion-fdm-activity-6665593886586490880-nbGX)
 
 
 
