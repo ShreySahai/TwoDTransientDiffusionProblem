@@ -70,6 +70,7 @@ This is one snapshot of the animation
 
 ![Snapshot taken during Animation](/Images/Example.png)
 
+[Link to the animation](/https://lnkd.in/dFfXRgD)
 
 
 
